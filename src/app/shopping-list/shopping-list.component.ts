@@ -11,4 +11,7 @@ export class ShoppingListComponent {
     new Ingredient('apple', 1999),
     new Ingredient('Realme', 3000),
   ];
+  onIngredientAdded(ingredient: Ingredient) {
+    this.ingredients.push(ingredient);
+  }
 }
