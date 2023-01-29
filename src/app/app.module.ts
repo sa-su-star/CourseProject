@@ -1,3 +1,4 @@
+import { ShoppingListService } from './shopping-list/shopping.service';
 import { HeaderComponent } from './header/header.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,7 +24,7 @@ import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/sh
     ShoppingListEditComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
