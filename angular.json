@@ -30,7 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "../project-main/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "/Users/sameh/Desktop/Main project/CourseProject/CourseProject/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -101,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "11fcfcb4-f377-4fda-b853-188079ffec81"
   }
 }

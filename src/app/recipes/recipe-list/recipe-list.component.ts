@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeListComponent implements OnInit {
   recipes!: Recipe[];
-  constructor(private recipeServicee: RecipeService) {}
+  constructor(private recipeService: RecipeService) {}
   ngOnInit() {
-    this.recipes = this.recipeServicee.getRecipes();
+    this.recipes = this.recipeService.getRecipes();
   }
 }

@@ -1,4 +1,3 @@
-import { RecipeService } from './../../reicpe.service';
 import { Recipe } from './../../recipe.model';
 import { Component, Input } from '@angular/core';
 
@@ -8,10 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./recipe-item.component.scss'],
 })
 export class RecipeItemComponent {
-  constructor(private recipeService: RecipeService) {}
+  constructor( ) {}
   @Input() recipe!: Recipe;
-
-  onSelected() {
-    this.recipeService.recipeSelected.emit(this.recipe);
-  }
+  @Input() index:any
 }
